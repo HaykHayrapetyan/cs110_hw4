@@ -1,5 +1,5 @@
 'use strict';
-const searching = function(){
+const searching =  function(){
 const s = $('#search').val();
     $.ajax({
         url: "/todos",
@@ -39,7 +39,7 @@ const creating = function(){
                 $('#create').val('');
             },
             error: function (problem) {
-                alert("Problem occured");
+                alert("Problem occured create");
             }
         });
     }
