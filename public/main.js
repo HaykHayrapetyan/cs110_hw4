@@ -1,5 +1,5 @@
 'use strict';
-const s+ function(){
+const searching = function(){
 const s = $('#search').val();
     $.ajax({
         url: "/todos",
