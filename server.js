@@ -11,6 +11,7 @@ const server = http.createServer(function(req, res) {
     const parsedQuery = querystring.parse(parsedUrl.query);
 
     if(req.url.indexOf('/todos') === 0) {
+        console.log('111');
         res.setHeader('Content-Type', 'application/json');
         if(method === 'GET') {
             let localTodos = todos;
